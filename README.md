@@ -4,21 +4,18 @@ In this comprehensive, project-based course, you will learn how to build a moder
 
 ### Key Learning Outcomes:
 
-Gain a deep understanding of the core technologies used in modern full stack web development, including React, Node.js, Express, and MongoDB.
-Develop proficiency in essential JavaScript (ES6) features that are widely used in web development.
-Master state management and routing techniques in React applications.
-Learn to create and style user interfaces using popular React UI libraries and CSS-in-JS solutions.
-Understand the fundamentals of backend development using Node.js and Express, including routing, middleware, and handling HTTP requests.
-Learn how to work with MongoDB, a popular NoSQL database, and Mongoose, an Object Data Modeling (ODM) library for MongoDB.
-Design, implement, and consume RESTful APIs for seamless communication between frontend and backend applications.
-Integrate the frontend and backend components of your application, connecting your React app with a RESTful API.
-Learn testing methodologies and tools for both frontend and backend components, using Jest, React Testing Library, and Supertest.
-Understand and apply best practices for project structure, code organization, and optimization.
-Deploy your full stack application to cloud platforms and hosting services, such as Heroku, AWS, Netlify, and Vercel.
-Gain hands-on experience by developing an Employee Management App, reinforcing the concepts learned in each module through practical application.
-Target Audience:
-
-This course is designed for developers who have a basic understanding of HTML, CSS, and JavaScript and want to advance their skills by learning full stack web development with React, Node.js, Express, and MongoDB. Familiarity with command-line tools is a plus, but not required.
+1. Gain a deep understanding of the core technologies used in modern full stack web development, including React, Node.js, Express, and MongoDB.
+2. Develop proficiency in essential JavaScript (ES6) features that are widely used in web development.
+3. Master state management and routing techniques in React applications.
+4. Learn to create and style user interfaces using popular React UI libraries and CSS-in-JS solutions.
+5. Understand the fundamentals of backend development using Node.js and Express, including routing, middleware, and handling HTTP requests.
+6. Learn how to work with MongoDB, a popular NoSQL database, and Mongoose, an Object Data Modeling (ODM) library for MongoDB.
+7. Design, implement, and consume RESTful APIs for seamless communication between frontend and backend applications.
+8. Integrate the frontend and backend components of your application, connecting your React app with a RESTful API.
+9. Learn testing methodologies and tools for both frontend and backend components, using Jest, React Testing Library, and Supertest.
+10. Understand and apply best practices for project structure, code organization, and optimization.
+11. Deploy your full stack application to cloud platforms and hosting services, such as Heroku, AWS, Netlify, and Vercel.
+12. Gain hands-on experience by developing an Employee Management App, reinforcing the concepts learned in each module through practical application.
 
 ### Course Format:
 
