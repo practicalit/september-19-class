@@ -29,14 +29,17 @@ Before diving into full stack web development with React, Node.js, Express, and 
    - Download and install the latest LTS (Long Term Support) version of Node.js from the official website (**[https://nodejs.org/](https://nodejs.org/)**).
    - This installation will also include npm (Node Package Manager), which is essential for managing project dependencies.
 2. Install Git:
+
    - Download and install Git from the official website (**[https://git-scm.com/](https://git-scm.com/)**). This will enable version control for your projects and facilitate collaboration with other developers.
    - Configure your Git username and email using the following commands in your terminal or command prompt:
+
      ```
      pythonCopy code
      git config --global user.name "Your Name"
      git config --global user.email "youremail@example.com"
 
      ```
+
 3. Set up a code editor:
    - Choose a code editor that suits your needs and preferences. Visual Studio Code (**[https://code.visualstudio.com/](https://code.visualstudio.com/)**) is a popular and versatile option, but you can also use alternatives like Sublime Text (**[https://www.sublimetext.com/](https://www.sublimetext.com/)**) or Atom (**[https://atom.io/](https://atom.io/)**).
    - Install relevant extensions and plugins to enhance your development experience. For example, in Visual Studio Code, you might install extensions like "ESLint" for JavaScript linting, "Prettier" for code formatting, and "Debugger for Chrome" for debugging React applications.
@@ -48,3 +51,38 @@ Before diving into full stack web development with React, Node.js, Express, and 
    - Spend some time learning basic command line operations, such as navigating directories, creating and deleting files and folders, and running scripts. This knowledge will prove invaluable as you progress through the course and work on your projects.
 
 With your development environment set up, you're now ready to begin building full stack web applications with React, Node.js, Express, and MongoDB.
+
+## CLI
+
+Here are some example command line operations for both Windows (using Command Prompt or PowerShell) and macOS (using Terminal):
+
+1. Change the current directory:
+   - Windows: **`cd <directory>`**
+   - macOS: **`cd <directory>`**
+2. List the contents of the current directory:
+   - Windows: **`dir`** (Command Prompt) or **`Get-ChildItem`** (PowerShell)
+   - macOS: **`ls`**
+3. Create a new directory:
+   - Windows: **`mkdir <directory>`**
+   - macOS: **`mkdir <directory>`**
+4. Remove a directory (only if empty):
+   - Windows: **`rmdir <directory>`**
+   - macOS: **`rmdir <directory>`**
+5. Remove a directory and its contents:
+   - Windows: **`rmdir /s /q <directory>`** (Command Prompt) or **`Remove-Item -Recurse -Force <directory>`** (PowerShell)
+   - macOS: **`rm -r <directory>`**
+6. Create a new file:
+   - Windows: **`type nul > <filename>`** (Command Prompt) or **`New-Item -ItemType File <filename>`** (PowerShell)
+   - macOS: **`touch <filename>`**
+7. Remove a file:
+   - Windows: **`del <filename>`**
+   - macOS: **`rm <filename>`**
+8. Display the contents of a file:
+   - Windows: **`type <filename>`** (Command Prompt) or **`Get-Content <filename>`** (PowerShell)
+   - macOS: **`cat <filename>`**
+9. Copy a file or directory:
+   - Windows: **`copy <source> <destination>`** (for files) or **`xcopy /s /e /i <source> <destination>`** (for directories)
+   - macOS: **`cp <source> <destination>`** (for files) or **`cp -R <source> <destination>`** (for directories)
+10. Move or rename a file or directory:
+    - Windows: **`move <source> <destination>`**
+    - macOS: **`mv <source> <destination>`**
