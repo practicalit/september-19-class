@@ -1,8 +1,8 @@
-###Course Overview:
+### Course Overview:
 
 In this comprehensive, project-based course, you will learn how to build a modern, full stack web application using React, Node.js, Express, and MongoDB. Throughout the course, you will gain practical experience by developing an Employee Management App, which will serve as a platform to apply the concepts and techniques you learn in each module. By the end of this course, you will have a strong understanding of full stack development, and you will be able to create, manage, and deploy web applications confidently.
 
-###Key Learning Outcomes:
+### Key Learning Outcomes:
 
 Gain a deep understanding of the core technologies used in modern full stack web development, including React, Node.js, Express, and MongoDB.
 Develop proficiency in essential JavaScript (ES6) features that are widely used in web development.
@@ -20,6 +20,6 @@ Target Audience:
 
 This course is designed for developers who have a basic understanding of HTML, CSS, and JavaScript and want to advance their skills by learning full stack web development with React, Node.js, Express, and MongoDB. Familiarity with command-line tools is a plus, but not required.
 
-###Course Format:
+### Course Format:
 
 The course comprises 10 weeks of instruction, divided into 20 sessions. Each week, you will explore new topics and apply your learning to the ongoing Employee Management App project. The course includes a mix of theoretical instruction, practical exercises, and hands-on project work, supplemented by additional resources, such as a community forum and instructor-led live sessions for support and clarification.
