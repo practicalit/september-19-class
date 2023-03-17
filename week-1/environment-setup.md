@@ -5,6 +5,7 @@ Before diving into full stack web development with React, Node.js, Express, and 
 1. Install Node.js and npm:
    - Download and install the latest LTS (Long Term Support) version of Node.js from the official website (**[https://nodejs.org/](https://nodejs.org/)**).
    - This installation will also include npm (Node Package Manager), which is essential for managing project dependencies.
+   - Use `node -v` or `node --version` to check your node version
 2. Install Git:
 
    - Download and install Git from the official website (**[https://git-scm.com/](https://git-scm.com/)**). This will enable version control for your projects and facilitate collaboration with other developers.

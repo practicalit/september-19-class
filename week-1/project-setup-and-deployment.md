@@ -2,7 +2,7 @@
 
 Here are the steps to deploy a React application on Netlify and integrate it with Git for continuous integration and continuous deployment (CI/CD):
 
-1. Create a React application: First, create a new React application using the **`create-react-app`** command.
+1. Create a React application: First, create a new React application using the **`npx create-react-app <name of your app>`** command.
 2. Create a Git repository: Create a new Git repository on a Git hosting service of your choice, such as **[GitHub](https://github.com/)** or GitLab.
 3. Connect Netlify to your Git repository: Log in to **[Netlify](https://www.netlify.com/)** and select "New site from Git" from the dashboard. Choose your Git provider and authorize Netlify to access your repositories.
 4. Select your repository and branch: Once connected to your Git repository, select the repository you want to deploy and choose the branch you want to deploy.
