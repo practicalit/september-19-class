@@ -16,3 +16,34 @@ In this comprehensive, project-based course, you will learn how to build a moder
 10. Understand and apply best practices for project structure, code organization, and optimization.
 11. Deploy your full stack application to cloud platforms and hosting services, such as Heroku, AWS, Netlify, and Vercel.
 12. Gain hands-on experience by developing an Employee Management App, reinforcing the concepts learned in each module through practical application.
+
+## Our app’s user stories (Employee-App)
+
+In software development, a user story is an actionable goal from the user's perspective. Defining user stories before we begin our work will help us focus our work. Our app should fulfill the following stories:
+
+As a user, I can
+
+- I can see a list of employees
+- Add an employee to the employees list
+- Search an employee by their name
+- Delete an employee
+- Edit employees information
+- View detailed employees information
+
+## Design
+
+#### Home Page
+
+![Home Page](./assests/Home-page.png)
+
+#### Login Page
+
+![Login Page](./assests/Login-page.png)
+
+#### Employee List Page
+
+![Employee List Page](./assests/Employee-list-page.png)
+
+#### Add Employee Page
+
+![Add Employee Page](./assests/Add-employee-page.png)
