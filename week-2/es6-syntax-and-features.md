@@ -171,3 +171,101 @@ In this example, an arrow function is used as the callback function for **`setTi
 **Quiz 3:**
 
 What happens if you replace the arrow function in the **`setTimeout()`** call with a traditional function expression? What will be the output, and why?
+
+### Template Literals
+
+Template literals, introduced in ECMAScript 6 (ES6), are a new way of working with strings in JavaScript. They provide an easier, more expressive way to create and manipulate strings that include variables, expressions, or multiline content.
+
+Template literals use backticks (**```**) instead of single or double quotes to delimit the string. Within a template literal, you can use placeholders, denoted by **`${expression}`**, to embed JavaScript expressions or variables directly into the string. The expressions inside the placeholders are evaluated and their values are concatenated with the surrounding string content.
+
+Here's a simple example of a template literal:
+
+```
+
+const name = "Alice";
+const age = 25;
+
+const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
+console.log(greeting); // Output: "Hello, my name is Alice and I am 25 years old."
+
+```
+
+Template literals also support multiline strings without requiring any additional syntax, like escape sequences or concatenation:
+
+```
+
+const multilineString = `This is a
+multiline
+string.`;
+console.log(multilineString);
+// Output:
+// This is a
+// multiline
+// string.
+
+```
+
+In summary, template literals provide a more expressive and convenient way to work with strings in JavaScript, allowing you to easily embed variables or expressions, and create multiline strings without any additional effort.
+
+**Example 1:**
+
+```
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30,
+};
+
+const introduction = `My name is ${person.firstName} ${person.lastName}, and I am ${person.age} years old.`;
+console.log(introduction);
+// Output: "My name is John Doe, and I am 30 years old."
+
+```
+
+In this example, a template literal is used to create a string that combines object properties with static text.
+
+**Quiz 1:**
+
+Rewrite the **`introduction`** string using traditional string concatenation. What will be the output, and will there be any difference in behavior?
+
+**Example 2:**
+
+```
+
+const numbers = [1, 2, 3, 4, 5];
+const formattedNumbers = numbers.map((number) => `Number: ${number}`).join('\n');
+
+console.log(formattedNumbers);
+// Output:
+// Number: 1
+// Number: 2
+// Number: 3
+// Number: 4
+// Number: 5
+
+```
+
+In this example, a template literal is used within an arrow function to format an array of numbers as a multiline string.
+
+**Quiz 2:**
+
+Can you rewrite the above example using traditional string concatenation within the arrow function?
+
+**Example 3:**
+
+```
+
+function formatCurrency(amount, currency) {
+  return `The total amount is ${amount.toFixed(2)} ${currency}.`;
+}
+
+console.log(formatCurrency(10.5, 'USD')); // Output: "The total amount is 10.50 USD."
+
+```
+
+In this example, a template literal is used to create a formatted currency string by embedding an expression (**`amount.toFixed(2)`**) directly into the string.
+
+**Quiz 3:**
+
+What happens if you replace the template literal in the **`formatCurrency`** function with a traditional string concatenation? What will be the output, and will there be any difference in behavior?
