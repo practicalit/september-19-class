@@ -90,10 +90,15 @@ An arrow function is a new way of defining functions introduced in ECMAScript 6 
 
 The syntax for arrow functions is as follows:
 
+```
+(parameters) => expression
+
+```
+
 Here's a comparison between a traditional function expression and an arrow function:
 
 ```
-javascriptCopy code
+
 // Traditional function expression
 const add1 = function (a, b) {
   return a + b;
@@ -117,7 +122,6 @@ In summary, arrow functions are a more concise way of defining functions in Java
 **Example 1:**
 
 ```
-
 const add = (a, b) => a + b;
 
 console.log(add(3, 4)); // Output: 7
@@ -133,7 +137,6 @@ Rewrite the **`add`** function using the traditional function expression syntax.
 **Example 2:**
 
 ```
-
 const numbers = [1, 2, 3, 4, 5];
 
 const doubled = numbers.map((number) => number * 2);
@@ -150,7 +153,6 @@ Can you rewrite the above example using the traditional function expression synt
 **Example 3:**
 
 ```
-
 const person = {
   name: 'Alice',
   sayHello: function() {
