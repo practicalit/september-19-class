@@ -9,7 +9,6 @@ In ECMAScript 6 (ES6), **`let`** and **`const`** are two new ways to declare var
 Example:
 
 ```
-javascriptCopy code
 if (true) {
   let x = 10;
 }
@@ -22,7 +21,6 @@ console.log(x); // ReferenceError: x is not defined, because x is limited to the
 Example:
 
 ```
-javascriptCopy code
 const PI = 3.14159;
 PI = 3.14; // TypeError: Assignment to constant variable, because PI is a constant and cannot be reassigned
 
@@ -33,7 +31,6 @@ In summary, **`let`** and **`const`** are more modern and safer ways to declare 
 **Example 1:**
 
 ```
-javascriptCopy code
 function exampleLet() {
   for (let i = 0; i < 5; i++) {
     setTimeout(() => console.log(i), i * 1000);
@@ -53,7 +50,6 @@ Rewrite the function above, replacing **`let`** with **`var`**. What will be the
 **Example 2:**
 
 ```
-javascriptCopy code
 const user = {
   firstName: "John",
   lastName: "Doe",
@@ -73,7 +69,6 @@ Can you make the **`user`** object immutable so that its properties cannot be ch
 **Example 3:**
 
 ```
-javascriptCopy code
 function calculateArea(width, height) {
   const area = width * height;
   return area;
