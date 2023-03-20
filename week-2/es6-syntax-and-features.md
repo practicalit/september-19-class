@@ -269,3 +269,135 @@ In this example, a template literal is used to create a formatted currency strin
 **Quiz 3:**
 
 What happens if you replace the template literal in the **`formatCurrency`** function with a traditional string concatenation? What will be the output, and will there be any difference in behavior?
+
+### Destructuring
+
+Destructuring is a feature introduced in ECMAScript 6 (ES6) that allows you to extract values from arrays or properties from objects and assign them to variables in a more concise and readable way. Destructuring can be applied to both arrays and objects, and it can greatly simplify your code, especially when working with complex data structures.
+
+**Array Destructuring:**
+
+Array destructuring allows you to extract values from an array and assign them to variables based on their position in the array. You can use square brackets **`[]`** on the left side of an assignment to define the variables and their corresponding positions.
+
+Example:
+
+```
+
+const numbers = [1, 2, 3];
+
+const [a, b, c] = numbers;
+
+console.log(a); // Output: 1
+console.log(b); // Output: 2
+console.log(c); // Output: 3
+
+```
+
+You can also skip elements or use the rest operator **`...`** to collect the remaining elements into an array:
+
+```
+
+const [first, , third, ...rest] = [1, 2, 3, 4, 5];
+
+console.log(first); // Output: 1
+console.log(third); // Output: 3
+console.log(rest);  // Output: [4, 5]
+
+```
+
+**Object Destructuring:**
+
+Object destructuring allows you to extract properties from an object and assign them to variables based on their property names. You can use curly braces **`{}`** on the left side of an assignment to define the variables and their corresponding property names.
+
+Example:
+
+```
+const person = {
+  name: "John Doe",
+  age: 30,
+};
+
+const { name, age } = person;
+
+console.log(name); // Output: "John Doe"
+console.log(age);  // Output: 30
+
+```
+
+You can also use aliases to rename the extracted variables or provide default values for missing properties:
+
+```
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+};
+
+const { firstName: first, lastName: last, age = 30 } = person;
+
+console.log(first); // Output: "John"
+console.log(last);  // Output: "Doe"
+console.log(age);   // Output: 30
+
+```
+
+In summary, destructuring is a convenient feature in JavaScript that allows you to extract values from arrays or properties from objects in a more concise and readable way, making it easier to work with complex data structures.
+
+**Example 1:**
+
+```
+
+function getFullName(user) {
+  const { firstName, lastName } = user;
+  return `${firstName} ${lastName}`;
+}
+
+const user = { firstName: "John", lastName: "Doe" };
+console.log(getFullName(user)); // Output: "John Doe"
+
+```
+
+In this example, object destructuring is used to extract **`firstName`** and **`lastName`** properties from the **`user`** object.
+
+**Quiz 1:**
+
+Rewrite the **`getFullName`** function without using destructuring. What will be the output, and will there be any difference in behavior?
+
+**Example 2:**
+
+```
+
+const [first, second, , fourth] = [1, 2, 3, 4, 5];
+
+console.log(first);  // Output: 1
+console.log(second); // Output: 2
+console.log(fourth); // Output: 4
+
+```
+
+In this example, array destructuring is used to extract the first, second, and fourth elements from the array.
+
+**Quiz 2:**
+
+How would you extract the first and third elements from the array without using destructuring?
+
+**Example 3:**
+
+```
+
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" },
+];
+
+const [, { name: secondUserName }] = users;
+
+console.log(secondUserName); // Output: "Bob"
+
+```
+
+In this example, array destructuring is combined with object destructuring to extract the **`name`** property of the second object in the **`users`** array.
+
+**Quiz 3:**
+
+How would you extract the **`name`** property of the third object in the **`users`** array using destructuring?
