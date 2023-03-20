@@ -401,3 +401,115 @@ In this example, array destructuring is combined with object destructuring to ex
 **Quiz 3:**
 
 How would you extract the **`name`** property of the third object in the **`users`** array using destructuring?
+
+Default and Rest Parameters
+
+Default and rest parameters are features introduced in ECMAScript 6 (ES6) that allow you to work with function parameters in a more flexible and concise way.
+
+**Default Parameters:**
+
+Default parameters allow you to set default values for function parameters when they are not provided or are **`undefined`**. To set a default value, you can use the assignment operator **`=`** followed by the default value when declaring the parameter in the function signature.
+
+Example:
+
+```
+
+function greet(name, greeting = "Hello") {
+  console.log(`${greeting}, ${name}!`);
+}
+
+greet("John"); // Output: "Hello, John!"
+greet("Jane", "Hi"); // Output: "Hi, Jane!"
+
+```
+
+In this example, the **`greeting`** parameter has a default value of **`"Hello"`**. If the **`greeting`** parameter is not provided or is **`undefined`**, the function uses the default value.
+
+**Rest Parameters:**
+
+Rest parameters allow you to capture a variable number of arguments passed to a function as an array. To define a rest parameter, you can use the rest operator **`...`** followed by the parameter name when declaring the parameter in the function signature. The rest parameter should always be the last parameter in the function definition.
+
+Example:
+
+```
+
+function sum(firstNumber, ...restNumbers) {
+  let total = firstNumber;
+
+  for (const number of restNumbers) {
+    total += number;
+  }
+
+  return total;
+}
+
+console.log(sum(1, 2, 3, 4)); // Output: 10
+
+```
+
+In this example, the **`...restNumbers`** rest parameter captures all the remaining arguments passed to the **`sum`** function (beyond the first argument) as an array. The function then calculates the sum of all the numbers, including the first number and the rest of the numbers.
+
+In summary, default parameters provide a convenient way to set default values for function parameters when they are not provided or are **`undefined`**, while rest parameters allow you to capture a variable number of arguments as an array, making it easier to work with functions that accept a varying number of arguments.
+
+**Example 1:**
+
+```
+
+function createGreeting(name, age, country = "USA") {
+  return `Hello, my name is ${name}, I am ${age} years old, and I am from ${country}.`;
+}
+
+console.log(createGreeting("John", 30)); // Output: "Hello, my name is John, I am 30 years old, and I am from USA."
+console.log(createGreeting("Jane", 25, "UK")); // Output: "Hello, my name is Jane, I am 25 years old, and I am from UK."
+
+```
+
+In this example, a default parameter is used to set a default value for the **`country`** parameter.
+
+**Quiz 1:**
+
+Rewrite the **`createGreeting`** function without using a default parameter for the **`country`**. How would you achieve the same behavior?
+
+**Example 2:**
+
+```
+
+function printArguments(...args) {
+  for (const arg of args) {
+    console.log(arg);
+  }
+}
+
+printArguments("a", "b", "c");
+// Output:
+// a
+// b
+// c
+
+```
+
+In this example, a rest parameter is used to capture all the arguments passed to the **`printArguments`** function.
+
+**Quiz 2:**
+
+How would you rewrite the **`printArguments`** function to accept an array of arguments instead of using a rest parameter?
+
+**Example 3:**
+
+```
+
+function buildUrl(protocol = "http", domain, path = "/", ...queryParams) {
+  const queryString = queryParams.map((param, index) => (index % 2 === 0 ? `&${param}` : `=${param}`)).join("");
+  return `${protocol}://${domain}${path}${queryString}`;
+}
+
+console.log(buildUrl("https", "example.com", "/search", "q", "JavaScript", "page", "2"));
+// Output: "https://example.com/search&q=JavaScript&page=2"
+
+```
+
+In this example, both default and rest parameters are used to build a URL string with optional protocol, path, and query parameters.
+
+**Quiz 3:**
+
+Can you rewrite the **`buildUrl`** function using traditional function parameters and the **`arguments`** object instead of default and rest parameters? What challenges do you encounter, and how would you overcome them?
