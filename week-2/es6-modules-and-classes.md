@@ -53,34 +53,9 @@ In this example, we import the exports from the **`myModule`** module using thei
 
 1. Define a module named **`math`** that exports a function called **`add`** that takes two parameters and returns their sum.
 
-```
-// math.js
-export function add(a, b) {
-  return a + b;
-}
-
-```
-
 2. Define a module named **`utils`** that exports a constant called **`PI`** with the value **`3.14159`** and a function called **`square`** that takes a parameter and returns its square.
 
-```
-// utils.js
-export const PI = 3.14159;
-
-export function square(x) {
-  return x * x;
-}
-
-```
-
 3. Import the **`add`** function from the **`math`** module and use it to calculate the sum of **`5`** and **`10`**.
-
-```
-import { add } from './math.js';
-
-console.log(add(5, 10)); // Output: 15
-
-```
 
 4. Import the **`PI`** constant and the **`square`** function from the **`utils`** module and use them to calculate the area of a circle with a radius of **`5`**.
 
@@ -147,55 +122,12 @@ Overall, classes and inheritance provide a way to create complex and reusable co
 
 1. Define a class called **`Animal`** that has a constructor that takes a **`name`** parameter and sets it as an instance variable. Add a method called **`speak`** that logs the string **`'I am an animal'`** to the console.
 
-```
-class Animal {
-  constructor(name) {
-    this.name = name;
-  }
+2. Define a class called **`Dog`** that extends the **`Animal`** class. Add a method called **`speak`** that logs the string **`'Woof!'`** to the console.
 
-  speak() {
-    console.log('I am an animal');
-  }
-}
+3. Create an instance of the **`Animal`** class and call its **`speak`** method.
 
-```
+4. Create an instance of the **`Dog`** class and call its **`speak`** method.
 
-1. Define a class called **`Dog`** that extends the **`Animal`** class. Add a method called **`speak`** that logs the string **`'Woof!'`** to the console.
+5. Define a class called **`Cat`** that extends the **`Animal`** class. Add a method called **`speak`** that logs the string **`'Meow!'`** to the console.
 
-```
-class Dog extends Animal {
-  speak() {
-    console.log('Woof!');
-  }
-}
-
-```
-
-1. Create an instance of the **`Animal`** class and call its **`speak`** method.
-
-```
-const animal = new Animal('Max');
-animal.speak(); // Output: I am an animal
-
-```
-
-1. Create an instance of the **`Dog`** class and call its **`speak`** method.
-
-```
-const dog = new Dog('Buddy');
-dog.speak(); // Output: Woof!
-
-```
-
-1. Define a class called **`Cat`** that extends the **`Animal`** class. Add a method called **`speak`** that logs the string **`'Meow!'`** to the console.
-
-```
-class Cat extends Animal {
-  speak() {
-    console.log('Meow!');
-  }
-}
-
-```
-
-1. Create an array of **`Animal`** instances that includes a **`Dog`** and a **`Cat`** instance. Loop over the array and call the **`speak`** method on each instance.
+6. Create an array of **`Animal`** instances that includes a **`Dog`** and a **`Cat`** instance. Loop over the array and call the **`speak`** method on each instance.
