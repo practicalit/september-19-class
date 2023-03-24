@@ -129,5 +129,3 @@ Overall, classes and inheritance provide a way to create complex and reusable co
 4. Create an instance of the **`Dog`** class and call its **`speak`** method.
 
 5. Define a class called **`Cat`** that extends the **`Animal`** class. Add a method called **`speak`** that logs the string **`'Meow!'`** to the console.
-
-6. Create an array of **`Animal`** instances that includes a **`Dog`** and a **`Cat`** instance. Loop over the array and call the **`speak`** method on each instance.
