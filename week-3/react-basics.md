@@ -1,18 +1,22 @@
 ## What is React?
 
-React is a JavaScript library created by Facebook. It is used for making complex, interactive user interfaces. It has become very popular in the last 5 years.
+React is an open-source JavaScript library used for building user interfaces or UI components. It was created by Facebook and is widely used in web development for creating dynamic, interactive, and reusable UI components.
 
-Why has it become so popular?
+React follows a declarative approach to building UIs, meaning that developers can describe what the UI should look like and React handles the underlying logic of rendering the UI. It allows developers to easily manage complex UI components and makes it easier to reuse code, leading to more efficient and faster development.
 
-- It is fast and efficient
-- It is easy to understand & less verbose than the "vanilla" JS API
-- It helps separate functionality into small, understandable pieces
+React works by breaking down the UI into reusable components, which can be combined together to create complex user interfaces. React uses a virtual DOM (Document Object Model) to efficiently update the UI without having to reload the entire page.
+
+React is widely used in web development and is supported by a large community of developers and companies. It is often used in conjunction with other JavaScript libraries and frameworks, such as Redux and React Native.
 
 ## What is a component?
 
-React heavily relies on a concept called "components". Components are like small Lego blocks for designing and developing user interfaces (UI). They can be stuck together in different ways to create new UI.
+In React, a component is a JavaScript function or class that returns a set of instructions, in the form of JSX (JavaScript Syntax Extension), for how a part of a user interface should appear and behave.
 
-Let's have a look at an example: the GitHub header. What are the logical "pieces" of UI? What could be a component?
+Components are the building blocks of React applications, and they can be reused throughout an application to create complex UIs. Components can take input data, known as "props", and use it to customize their appearance and behavior. They can also maintain internal state, which can change over time in response to user interactions or other events.
+
+React components can be divided into two types: functional and class components. Functional components are simply JavaScript functions that take props as input and return JSX. Class components, on the other hand, are JavaScript classes that extend the React.Component class, and have additional features such as lifecycle methods and internal state management.
+
+React components allow developers to create reusable, composable, and maintainable code, leading to more efficient development and easier maintenance over time. Components can be combined together to create more complex UIs, and they can be easily shared across different parts of an application or even between different applications.
 
 ![https://syllabus.codeyourfuture.io/20a620b45cf454e827f95f09fc46d13f.png](https://syllabus.codeyourfuture.io/20a620b45cf454e827f95f09fc46d13f.png)
 
@@ -40,13 +44,23 @@ EXERCISE
 
 1. Draw boxes around the components and give them names. Compare with the example components shown in the second image.
 
-## JSX[](https://syllabus.codeyourfuture.io/react/week-1/lesson#jsx)
+## JSX
+
+JSX (JavaScript Syntax Extension) is a syntax extension for JavaScript that allows developers to write HTML-like code within their JavaScript code. It is a syntax extension specific to React, and is used to define the structure and appearance of user interfaces in React applications.
+
+JSX allows developers to write code that is more expressive and easier to read and understand, compared to traditional JavaScript code that manipulates the DOM directly. With JSX, developers can write code that looks like HTML, but includes JavaScript expressions within curly braces {}. For example:
+
+`const element = <h1>Hello, {name}!</h1>;`
+
+In the above code, JSX is used to create an h1 element with the text "Hello, {name}!". The curly braces are used to include a JavaScript expression within the element.
+
+JSX is not required to use React, and React can be used without it. However, it is a popular and widely-used feature of React, and is often used in conjunction with other JavaScript features and libraries to create dynamic and interactive user interfaces. JSX is transformed into regular JavaScript code during the build process using a tool like Babel, and can be used with any JavaScript environment that supports ECMAScript 6 or higher.
 
 React is already helping us a bit by cleaning up some of the verbose vanilla JS APIs. However, in a typical React application, you would still use a *lot* of `React.createElement` function. To improve the developer experience the React team developed **JSX**.
 
 JSX is a syntax *sugar* that looks like HTML but is actually converted to `React.createElement` function when you run it.
 
-Using JSX ([interactive version](https://jsbin.com/rideris/edit?html,output)):
+Using JSX
 
 ```
 const element = <div>Hello World</div>;
