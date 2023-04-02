@@ -174,7 +174,7 @@ Component composition is the name for passing components as props to other compo
 ### How can composition help performance?
 
 Composition is also a great ally if you try to reduce the number of re-renders in your application.
-![Employee Component Composition](/week-3/03-React/01-Activities/employee-component-flow-chart.png)
+![Employee Component Composition](/week-3/employee-component-flow-chart.png)
 
 ```jsx
 <App/>
