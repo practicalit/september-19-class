@@ -5,7 +5,6 @@ Props (short for "properties") are a way to pass data from a parent component to
 For example, if you have a component that displays a user's name, you can pass the name as a prop from the parent component:
 
 ```
-javascriptCopy code
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -60,7 +59,7 @@ let useState = React.useState;
 In fact, we can just write `React.useState`
  in our component, if we want! But to type a bit less code, we import it (using the curly braces) once and then can just use `useState`
 
-### Using `useState`[](https://syllabus.codeyourfuture.io/react/week-2/lesson#using-usestate)
+### Using `useState`
 
 Now let's look at how we can use the `useState` Hook
 
