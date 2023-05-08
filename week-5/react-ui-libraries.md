@@ -153,15 +153,18 @@ function App() {
    ◦ Customization and theming: Ant Design supports extensive customization options and theming using LESS variables.
    ◦ Example:
 
-`import React from "react";
+```
+import React from "react";
 import { Button } from "antd";
 import "antd/dist/antd.css";
 
 function App() {
 return <Button type="primary">Click me</Button>;
-}`
+}
 
-    ◦ Exercise: Create a React app using Ant Design components and customize its appearance.
+```
+
+◦ Exercise: Create a React app using Ant Design components and customize its appearance.
 
 4. Bootstrap
    ◦ Overview: Bootstrap is a widely-used CSS framework that can also be used with React through the React-Bootstrap library.
@@ -196,7 +199,3 @@ return <Button type="primary">Click me</Button>;
 
 **Conclusion**:
 After completing this lessons, you will have a deeper understanding of React UI libraries and styling methods. You will be able to choose the right library for your needs, create beautiful user interfaces using Styled-components and Emotion, and leverage popular UI libraries such as Material-UI, Ant Design, and Bootstrap in your projects.
-
-```
-
-```
