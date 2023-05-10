@@ -38,7 +38,6 @@ In this week's lessons, we will explore various React UI libraries and styling m
    - Example:
 
      ```
-     javascriptCopy code
      import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 
      const GlobalStyle = createGlobalStyle`
